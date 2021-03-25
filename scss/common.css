@@ -6146,9 +6146,23 @@ readers do not read off random characters that represent icons */
 }
 
 body {
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow: hidden;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+#particles-js {
+  width: 100vw;
+  height: 100vh;
 }
 
 * {
@@ -6251,6 +6265,30 @@ body {
   font-family: "lato", sans-serif;
   font-weight: 300;
   font-size: 20px;
+}
+
+@media only screen and (max-width: 375px) {
+  #title {
+    width: 100vw;
+    height: 100vh;
+    font-size: 20px;
+  }
+  #title img {
+    height: 200px;
+    width: 200px;
+    border-radius: 500px;
+  }
+  #title .col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #title .col .btn {
+    font-size: 10px;
+    margin: 0px;
+    padding: 10px 10px;
+    margin: 0px 10px;
+  }
 }
 
 @-webkit-keyframes animStar {
