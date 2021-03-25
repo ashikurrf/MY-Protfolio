@@ -6152,7 +6152,7 @@ body {
   overflow: hidden;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
   body {
     overflow: hidden;
     width: 100vw;
@@ -6267,7 +6267,7 @@ body {
   font-size: 20px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
   #title {
     width: 100vw;
     height: 100vh;
